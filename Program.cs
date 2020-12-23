@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            SerialReader serialReader = new SerialReader();
         }
     }
 }
