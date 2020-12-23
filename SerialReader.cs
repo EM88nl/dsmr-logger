@@ -15,7 +15,7 @@ public class SerialReader
     }
     public void Read()
     {
-        //while (_continueReading)
+        while (_continueReading)
         {
             string message = _serialPort.ReadLine();
             Console.WriteLine(message);
