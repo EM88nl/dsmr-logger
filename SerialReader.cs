@@ -10,8 +10,9 @@ public class SerialReader
         _serialPort = new SerialPort("/dev/ttyUSB0", 115200, Parity.None, 8, StopBits.One);
         _serialPort.Open();
 
-        _readThread = new Thread(Read);
         _continueReading = true;
+        _readThread = new Thread(Read);
+        _readThread.Start();
     }
     public void Read()
     {
